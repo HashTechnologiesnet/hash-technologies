@@ -1,0 +1,29 @@
+.landing-wrapper{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.landing-text{
+    margin-top: 20%;
+}
+.landing-text h1, h2{
+    margin: 0 !important;
+}
+.landing-image{
+    padding: 0 !important;
+    margin-top: 0px;
+}
+
+.landing-image img {
+    max-width: 100%;
+    top: -35px;
+    /* width: 456px; */
+    height: 660px;
+}
+
+
+.shadow{
+    -webkit-box-shadow: 5px 16px 34px -7px rgba(64,143,249,0.84); 
+    box-shadow: 5px 16px 34px -7px rgba(64,143,249,0.84);
+}

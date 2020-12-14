@@ -6,9 +6,9 @@ font-size: 14px;
 color: #66615B;
 text-transform: uppercase; }
 
-.navbar-nav .active {
+/* .navbar-nav .active {
     border-bottom: 5px solid #408ff9;
-}
+} */
 
 .navbar-nav{
     align-items: center;

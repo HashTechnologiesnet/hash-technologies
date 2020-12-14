@@ -1,0 +1,22 @@
+body{
+    overflow:  hidden !important;
+}
+.info{
+    height: 290px;
+    border-radius: 23px;
+background: #ffffff;
+box-shadow:  20px 20px 40px #e3e3e3, 
+             -20px -20px 40px #ffffff;
+}
+.info .MuiSvgIcon-root {
+  
+    width: 6em !important;
+    height: 2em !important;
+}
+.info-title{
+    margin: 10px 0px;
+    font-weight: 500;
+}
+.info-wrap{
+    height: 320px;
+}

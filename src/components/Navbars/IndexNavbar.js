@@ -2,7 +2,6 @@
 import React from "react";
 // nodejs library that concatenates strings
 import classnames from "classnames";
-import { motion, useViewportScroll } from "framer-motion"
 
 import "./IndexNavbar.css";
 // reactstrap components
@@ -82,7 +81,7 @@ function IndexNavbar({active}) {
             <NavItem className={(active==="home") ? "active" :""}>
               <NavLink
                 data-placement="bottom"
-                href="/home"
+                href="#home"
                 title="Home"
               >
                 <p>Home</p>
@@ -91,25 +90,25 @@ function IndexNavbar({active}) {
             <NavItem className={(active==="services") ? "active" : ""}>
               <NavLink
                 data-placement="bottom"
-                href="/projects"
+                href="#services"
                 title="Home"
               >
-                <p>Projects</p>
+                <p>Services</p>
               </NavLink>
             </NavItem>
             <NavItem className={(active==="career") ? "active": ""}>
               <NavLink
                 data-placement="bottom"
-                href="/career"
+                href="#about-us"
                 title="Home"
               >
-                <p >Career</p>
+                <p >About Us</p>
               </NavLink>
             </NavItem>
             <NavItem className={(active==="contact") ? "active" : ""}>
               <NavLink
                 data-placement="bottom"
-                href="/contact"
+                href="#contact"
                 title="Home"
               >
                 <p>Contact</p>

@@ -21,7 +21,13 @@ import {
 import DemoFooter from "components/Footers/DemoFooter.js";
 // import IndexHeader from "components/Headers/IndexHeader";
 import IndexNavbar from "components/Navbars/IndexNavbar";
-import LandingPageHeader from "components/Headers/LandingPageHeader";
+// import LandingPageHeader from "components/Headers/LandingPageHeader";
+import IndexHeader from "components/Headers/IndexHeader";
+import AcUnitIcon from '@material-ui/icons/AcUnit';
+import LocalMallIcon from '@material-ui/icons/LocalMall';
+import BuildIcon from '@material-ui/icons/Build';
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import SectionCarousel from "../views/index-sections/SectionCarousel"
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -33,108 +39,143 @@ function LandingPage() {
   });
   return (
     <>
-    <IndexNavbar active="home" />
-      {/* <IndexHeader /> */}
-      <LandingPageHeader page="home" />
+      <IndexNavbar active="home" />
+      <IndexHeader page="home" />
       <div className="main">
-        <div className="section text-center">
+        <div className="section text-center" id="about-us">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
-                <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                <h2 className="title">Who we are?</h2>
+                <h5 className="description my-5">
+                  With a team of young, dynamic and vibrant people, we work together with dedication to master the biggest challenges.
+                  Our team is a mix of professionals from technical and creative fields who lead <span className="font-weight-bold">Hash Technologies</span> and its clients towards success.
+                  <br /><br />At <span className="font-weight-bold">Hash Technologies</span>, we support, encourage and foster the qualities of respect and transparency within the organisation.
+                  We motivate team work for better results and ensure complete customer satisfaction.
+                  We owe a lot to our team of energetic and enthusiastic employees who work with the motto—Delivery Always. No Excuses. Period.
                 </h5>
                 <br />
-                <Button
-                  className="btn-round"
-                  color="info"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  See Details
-                </Button>
               </Col>
             </Row>
             <br />
             <br />
-            <Row>
-              <Col md="3">
-                <div className="info">
+
+            <Row id="services">
+              <Col md="12">
+                <div className="section-header my-5">
+                  <h2>What we Do.....</h2>
+                </div>
+              </Col>
+              <Col md="4" className="info-wrap">
+                <div className="info px-4 py-5">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
+                    <AcUnitIcon />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
+                    <h4 className="info-title">Blockchain Development</h4>
                     <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                      The development of decentralized applications based on blockchain and other related technologies.
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
+
                   </div>
                 </div>
               </Col>
-              <Col md="3">
-                <div className="info">
+              <Col md="4" className="info-wrap">
+                <div className="info px-4 py-5">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-bulb-63" />
+                    <LocalMallIcon />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
+                    <h4 className="info-title">E-commerce Services</h4>
                     <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                      We develop user-friendly eCommerce applications for both mobile and web platforms.
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
+
                   </div>
                 </div>
               </Col>
-              <Col md="3">
-                <div className="info">
+              <Col md="4" className="info-wrap">
+                <div className="info px-4 py-5">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-chart-bar-32" />
+                    <BuildIcon />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Statistics</h4>
+                    <h4 className="info-title">Development Services</h4>
                     <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
+                      OPEN SOURCE DEVELOPMENT - We are creating smart website
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
+
                   </div>
                 </div>
               </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-sun-fog-29" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
+              <Col className="offset-6 mt-4">
+                <Button
+                  className="btn-round mt-4 shadow"
+                  color="info"
+                  type="button"
+                >
+                  See More
+                      <ArrowRightAltIcon />
+                </Button>
               </Col>
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+
+        <div className="section my-4 text-center section-dark" id="projects">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto" md="8">
+                <h2 className="title">Our Latest Work</h2>
+                <br />
+              </Col>
+            </Row>
+            <Row className="mt-4">
+              <Col md="6" className="my-4">
+                <img src={require("../assets/img/dexchange.png")} alt="DeXchange" width="230px" />
+              </Col>
+              <Col md="6" className="my-4">
+                <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+              </Col>
+              {/* <SectionCarousel /> */}
+            </Row>
+            <br />
+            <br />
+          </Container>
+        </div>
+        
+        <div className="section my-4 text-center" id="partners">
+        <Container>
+            <Row>
+              <Col className="ml-auto mr-auto" md="8">
+                <h2 className="title">Who collaborate with us?</h2>
+                <h5 className="description my-5">
+                  <span className="font-weight-bold">Hash Technologies</span> collaborates with some of multi-national tech companies.
+                  <span className="font-weight-bold"> Blockchain</span> is the key factor for our partnership with all leading tech companies.
+                </h5>
+                <br />
+              </Col>
+            </Row>
+        </Container>
+        <div className="w-100 overflow-hidden">
+        <Row className="bg-dark py-5">
+            <Col md="3" className="my-3">
+            <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+            </Col>
+            <Col md="3" className="my-3">
+            <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+            </Col>
+            <Col md="3" className="my-3">
+            <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+            </Col>
+            <Col md="3" className="my-3">
+            <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+            </Col>
+        </Row>
+        </div>
+        </div>
+        
+        <div className="section text-center" id="teams">
           <Container>
             <h2 className="title">Let's talk about us</h2>
             <Row>
@@ -296,7 +337,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section landing-section">
+        <div className="section landing-section" id="contact">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
@@ -334,7 +375,7 @@ function LandingPage() {
                   />
                   <Row>
                     <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
+                      <Button className="btn-fill" color="info" size="lg">
                         Send Message
                       </Button>
                     </Col>

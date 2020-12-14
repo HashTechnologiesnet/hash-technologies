@@ -31,26 +31,26 @@ function DemoFooter() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
-                  target="_blank"
+                  href="#services"
+                 
                 >
-                  Creative Tim
+                  Services
                 </a>
               </li>
               <li>
                 <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
-                  target="_blank"
+                  href="#projects"
+                  target=""
                 >
-                  Blog
+                  Projects
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
-                  target="_blank"
+                  href="#home"
+                  
                 >
-                  Licenses
+                  Back to top
                 </a>
               </li>
             </ul>

@@ -3,6 +3,9 @@
   "version": "1.2.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "animate.css": "^4.1.1",
     "classnames": "2.2.6",
     "framer-motion": "^2.9.5",
     "moment": "2.26.0",
