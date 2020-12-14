@@ -1,0 +1,16 @@
+.navbar .navbar-brand {
+font-weight: 600;
+margin: 2px 0px !important;
+padding: 5px 10px !important;
+font-size: 14px;
+color: #66615B;
+text-transform: uppercase; }
+
+.navbar-nav .active {
+    border-bottom: 5px solid #408ff9;
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
