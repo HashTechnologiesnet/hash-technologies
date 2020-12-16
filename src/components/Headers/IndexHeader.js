@@ -22,7 +22,7 @@ function IndexHeader() {
                   <div className="section-header animate__animated animate__fadeInRight ">
                     <h2 className="">Introducing</h2>
                     <h1 className="font-weight-bold">Blockchain Technology</h1>
-                    <h2>For first time in Nepal</h2>
+                    <h2>For the first time in Nepal</h2>
                   </div>
                   <div className="mt-4 animate__animated animate__fadeIn animate__delay-1s">
                     <h5>

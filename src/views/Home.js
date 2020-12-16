@@ -27,7 +27,7 @@ import AcUnitIcon from '@material-ui/icons/AcUnit';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
 import BuildIcon from '@material-ui/icons/Build';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
-import SectionCarousel from "../views/index-sections/SectionCarousel"
+// import SectionCarousel from "../views/index-sections/SectionCarousel"
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -42,8 +42,8 @@ function LandingPage() {
       <IndexNavbar active="home" />
       <IndexHeader page="home" />
       <div className="main">
-        <div className="section text-center" id="about-us">
-          <Container>
+        <div className="section text-center my-2" id="about-us">
+          <Container className="mt-5">
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="title">Who we are?</h2>
@@ -57,12 +57,13 @@ function LandingPage() {
                 <br />
               </Col>
             </Row>
-            <br />
-            <br />
-
-            <Row id="services">
+          </Container>
+        </div>
+        <div className="section text-center" id="services">
+          <Container className="mt-5">
+            <Row>
               <Col md="12">
-                <div className="section-header my-5">
+                <div className="section-header my-4">
                   <h2>What we Do.....</h2>
                 </div>
               </Col>
@@ -86,7 +87,7 @@ function LandingPage() {
                     <LocalMallIcon />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">E-commerce Services</h4>
+                    <h4 className="info-title">Custom Software Services</h4>
                     <p>
                       We develop user-friendly eCommerce applications for both mobile and web platforms.
                     </p>
@@ -137,15 +138,14 @@ function LandingPage() {
               <Col md="6" className="my-4">
                 <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
               </Col>
-              {/* <SectionCarousel /> */}
             </Row>
             <br />
             <br />
           </Container>
         </div>
-        
+
         <div className="section my-4 text-center" id="partners">
-        <Container>
+          <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="title">Who collaborate with us?</h2>
@@ -156,25 +156,25 @@ function LandingPage() {
                 <br />
               </Col>
             </Row>
-        </Container>
-        <div className="w-100 overflow-hidden">
-        <Row className="bg-dark py-5">
-            <Col md="3" className="my-3">
-            <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
-            </Col>
-            <Col md="3" className="my-3">
-            <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
-            </Col>
-            <Col md="3" className="my-3">
-            <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
-            </Col>
-            <Col md="3" className="my-3">
-            <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
-            </Col>
-        </Row>
+          </Container>
+          <div className="w-100 overflow-hidden">
+            <Row className="bg-dark py-5">
+              <Col md="3" className="my-3">
+                <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+              </Col>
+              <Col md="3" className="my-3">
+                <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+              </Col>
+              <Col md="3" className="my-3">
+                <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+              </Col>
+              <Col md="3" className="my-3">
+                <img src={require("../assets/img/bankoftron.png")} alt="DeXchange" />
+              </Col>
+            </Row>
+          </div>
         </div>
-        </div>
-        
+
         <div className="section text-center" id="teams">
           <Container>
             <h2 className="title">Let's talk about us</h2>

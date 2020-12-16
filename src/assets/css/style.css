@@ -1,5 +1,5 @@
 body{
-    overflow:  hidden !important;
+    overflow-x:  hidden !important;
 }
 .info{
     height: 290px;
@@ -19,4 +19,7 @@ box-shadow:  20px 20px 40px #e3e3e3,
 }
 .info-wrap{
     height: 320px;
+}
+.section{
+    padding: 20px 0px !important;
 }
